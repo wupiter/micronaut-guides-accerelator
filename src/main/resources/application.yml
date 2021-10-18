@@ -1,0 +1,8 @@
+endpoints:
+  info:
+    enabled: true
+    sensitive: false
+
+micronaut:
+  application:
+    name: demo
