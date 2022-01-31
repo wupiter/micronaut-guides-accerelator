@@ -1,23 +1,22 @@
 {
-  "name": "MIcronaut Accelerator",
-  "description": "Code generator based on the Micronaut guides at https://micronaut.io/guides/",
-  "tags": [ "java", "Micronaut", "gradle", "maven" ],
-  "params": [
-    {
-      "name": "appName",
+  "info": {
+    "name": "MIcronaut Accelerator",
+    "description": "Code generator based on the Micronaut guides at https://micronaut.io/guides/",
+    "tags": [ "java", "Micronaut", "gradle", "maven" ]
+  },
+  "params": {
+    "appName": {
       "type": "text",
       "description": "ie: example-api",
       "label": "Application Name",
       "required": true
     },
-    {
-      "name": "packageName",
+    "packageName": {
       "type": "text",
       "description": "ie: com.example.app",
       "required": true
     },
-    {
-      "name": "buildEngine",
+    "buildEngine": {
       "type": "radios",
       "values": [
         { "key": "gradle", "label": "Gradle" },
@@ -26,8 +25,7 @@
       "defaultValue": "gradle",
       "required": true
     },
-    {
-      "name": "javaVersion",
+    "javaVersion": {
       "type": "select",
       "values": [
         8, 9, 11, 16
@@ -35,7 +33,7 @@
       "defaultValue": 11,
       "required": true
     }
-  ],
+  },
   "preProcessing": {
     "pathReplacements": [
       { "target":  "demo-api", "replacement":  "{{appName}}"},
