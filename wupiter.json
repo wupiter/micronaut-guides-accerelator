@@ -1,6 +1,6 @@
 {
   "info": {
-    "name": "MIcronaut Accelerator",
+    "name": "Micronaut App Starter",
     "description": "Code generator based on the Micronaut guides at https://micronaut.io/guides/",
     "tags": [ "java", "Micronaut", "gradle", "maven" ]
   },
